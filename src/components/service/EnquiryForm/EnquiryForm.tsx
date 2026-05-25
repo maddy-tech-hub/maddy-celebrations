@@ -1,5 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { CheckCircle2 } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { cities } from "../../../data/cities";
@@ -21,11 +23,19 @@ const schema = z.object({
 
 type FormData = z.infer<typeof schema>;
 
+const getSubmittedAtInIst = () =>
+  `${new Intl.DateTimeFormat("en-IN", {
+    dateStyle: "medium",
+    timeStyle: "medium",
+    timeZone: "Asia/Kolkata",
+  }).format(new Date())} IST`;
+
 export const EnquiryForm: React.FC<{ defaultDecorationType: string; onSubmitEnquiry?: (payload: FormData) => void }> = ({
   defaultDecorationType,
   onSubmitEnquiry,
 }) => {
-  const [submitFeedback, setSubmitFeedback] = useState<{ type: "success" | "error"; message: string } | null>(null);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -37,15 +47,27 @@ export const EnquiryForm: React.FC<{ defaultDecorationType: string; onSubmitEnqu
     defaultValues: { decorationType: defaultDecorationType, city: cities[0] },
   });
 
+  useEffect(() => {
+    if (!showSuccess) return undefined;
+
+    const timer = window.setTimeout(() => {
+      setShowSuccess(false);
+    }, 2200);
+
+    return () => window.clearTimeout(timer);
+  }, [showSuccess]);
+
   const onSubmit = async (data: FormData) => {
+    setSubmitError(null);
+
     const payload = {
       ...data,
       additionalNotes: data.additionalNotes?.trim() || "No additional notes provided",
-      inquiryId: `MC-${Date.now()}`,
-      submittedAt: new Date().toISOString(),
+      inquiryId: `SG-${Date.now()}`,
+      submittedAt: getSubmittedAtInIst(),
       servicePageUrl: window.location.href,
       emailSubjectAdmin: `New Decoration Inquiry - ${data.decorationType}`,
-      emailSubjectCustomer: "We Received Your Inquiry - Maddy Celebrations",
+      emailSubjectCustomer: "We Received Your Inquiry - Seven Gala",
     };
 
     console.log("Enquiry Payload:", payload);
@@ -53,19 +75,44 @@ export const EnquiryForm: React.FC<{ defaultDecorationType: string; onSubmitEnqu
 
     try {
       await sendEnquiryEmail(payload);
-      setSubmitFeedback({ type: "success", message: "Enquiry submitted successfully. Our team will contact you soon." });
       reset({ decorationType: defaultDecorationType, city: cities[0] });
+      setShowSuccess(true);
     } catch (error) {
       console.error("Email submit failed:", error);
-      setSubmitFeedback({
-        type: "error",
-        message: "Unable to send enquiry now. Please verify EmailJS config and try again.",
-      });
+      setSubmitError("Unable to send enquiry now. Please verify EmailJS config and try again.");
     }
   };
 
+  if (showSuccess) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 10, scale: 0.98 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        className="rounded-2xl border border-emerald-200 bg-emerald-50 px-5 py-7 text-center shadow-sm"
+      >
+        <motion.div
+          initial={{ scale: 0.6, rotate: -10 }}
+          animate={{ scale: 1, rotate: 0 }}
+          transition={{ type: "spring", stiffness: 260, damping: 16 }}
+          className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-white text-emerald-600 shadow-lg shadow-emerald-600/15"
+        >
+          <CheckCircle2 size={54} strokeWidth={1.8} />
+        </motion.div>
+        <h3 className="mt-5 text-xl font-bold text-slate-950">Thank you for your enquiry</h3>
+        <p className="mx-auto mt-2 max-w-sm text-sm leading-6 text-slate-600">
+          We received your celebration details. Our team will review your request and contact you shortly.
+        </p>
+      </motion.div>
+    );
+  }
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+      {submitError ? (
+        <div className="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700">
+          {submitError}
+        </div>
+      ) : null}
       <Input placeholder="Name" {...register("name")} />
       <Input placeholder="Mobile Number" {...register("mobileNumber")} />
       <Input placeholder="Email" {...register("email")} />
@@ -75,11 +122,6 @@ export const EnquiryForm: React.FC<{ defaultDecorationType: string; onSubmitEnqu
       <Input placeholder="Decoration Type" {...register("decorationType")} />
       <Input placeholder="Additional Notes" {...register("additionalNotes")} />
       {Object.keys(errors).length > 0 ? <p className="text-xs text-rose-600">Please fill all fields correctly.</p> : null}
-      {submitFeedback ? (
-        <p className={`text-xs ${submitFeedback.type === "success" ? "text-emerald-700" : "text-rose-700"}`}>
-          {submitFeedback.message}
-        </p>
-      ) : null}
       <Button className="w-full" type="submit" disabled={isSubmitting}>
         {isSubmitting ? "Submitting..." : "Submit Enquiry"}
       </Button>

@@ -10,7 +10,7 @@ import { AppRoutes } from "../routes/AppRoutes";
 
 const Header = () => {
   const { city, setCity } = useLocation();
-  const appName = import.meta.env.VITE_APP_NAME || "Maddy Celebrations";
+  const appName = import.meta.env.VITE_APP_NAME || "Seven Gala";
   return (
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-4 py-3 sm:px-6">
