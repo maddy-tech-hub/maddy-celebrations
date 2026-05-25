@@ -1,0 +1,190 @@
+[
+  {
+    "id": "svc-ring-6x6",
+    "slug": "ring-balloon-decoration-6x6",
+    "title": "6x6 Ring Balloon Decoration",
+    "category": "Birthday",
+    "startingPrice": 3000,
+    "shortDescription": "Elegant 6x6 ring setup with gold, pink, and rose gold balloons.",
+    "description": "Premium ring decor package ideal for birthdays and intimate celebrations.",
+    "image": "/ring-baloon.png",
+    "gallery": [
+      "/ring-baloon.png"
+    ],
+    "packageInclusions": [
+      "6x6 Ring Frame",
+      "Balloon Colors: Gold, Pink, Rose Gold"
+    ],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": [
+      "Compact setup",
+      "Photo-friendly",
+      "Fast installation"
+    ],
+    "availableCities": [
+      "Bangalore",
+      "Hyderabad"
+    ]
+  },
+  {
+    "id": "svc-neon-birthday",
+    "slug": "happy-birthday-neon-ring",
+    "title": "Happy Birthday Neon Ring Setup",
+    "category": "Birthday",
+    "startingPrice": 3500,
+    "shortDescription": "Ring balloon setup with happy birthday neon light.",
+    "description": "Birthday setup featuring neutral balloon tones and neon highlight styling.",
+    "image": "/happy-birthday-neon.png",
+    "gallery": [
+      "/happy-birthday-neon.png"
+    ],
+    "packageInclusions": [
+      "Ring Balloon Setup",
+      "Happy Birthday Neon Light"
+    ],
+    "addOns": [
+      {
+        "title": "Neon Light Add-on",
+        "price": 500
+      }
+    ],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": [
+      "Premium look",
+      "Soft color palette",
+      "Indoor-ready"
+    ],
+    "availableCities": [
+      "Bangalore",
+      "Hyderabad"
+    ]
+  },
+  {
+    "id": "svc-surprise-car-boot",
+    "slug": "surprise-birthday-plan",
+    "title": "Surprise Birthday Plan",
+    "category": "Birthday",
+    "startingPrice": 2000,
+    "shortDescription": "Car boot surprise decor with bunting, photos, and foil balloons.",
+    "description": "Creative surprise plan perfect for midnight or doorstep birthday moments.",
+    "image": "/Surprise-birthday-plan.png",
+    "gallery": [
+      "/Surprise-birthday-plan.png"
+    ],
+    "packageInclusions": [
+      "Happy Birthday Bunting",
+      "10 Photo Prints",
+      "Age Number",
+      "Red/Gold Balloons",
+      "2 Heart Shape Foils"
+    ],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": [
+      "Quick setup",
+      "High surprise impact",
+      "Budget friendly"
+    ],
+    "availableCities": [
+      "Bangalore",
+      "Hyderabad"
+    ]
+  },
+  {
+    "id": "svc-u-shape-bride",
+    "slug": "u-shape-balloon-decoration",
+    "title": "U Shape Balloon Decoration",
+    "category": "Engagement",
+    "startingPrice": 4500,
+    "shortDescription": "Stylish U-shape frame decor with chrome silver and neon.",
+    "description": "Elegant U-frame concept suitable for bride-to-be, engagement, and special occasions.",
+    "image": "/U-shape-baloon-decoration.png",
+    "gallery": [
+      "/U-shape-baloon-decoration.png"
+    ],
+    "packageInclusions": [
+      "U Shape Frame",
+      "Pink/White/Chrome Silver Balloons",
+      "Big Macaron Balloons",
+      "Neon Light"
+    ],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": [
+      "Premium finish",
+      "Event focal point",
+      "Customizable theme colors"
+    ],
+    "availableCities": [
+      "Bangalore"
+    ]
+  },
+  {
+    "id": "svc-bedroom-surprise",
+    "slug": "bedroom-surprise-decoration",
+    "title": "Bedroom Surprise Decoration",
+    "category": "Romantic Setup",
+    "startingPrice": 2000,
+    "shortDescription": "Room surprise setup with foil message and hanging balloons.",
+    "description": "Romantic and birthday-ready bedroom styling for private celebrations.",
+    "image": "/Bed-room-surprise.png",
+    "gallery": [
+      "/Bed-room-surprise.png"
+    ],
+    "packageInclusions": [
+      "Happy Birthday Gold Foil",
+      "100 Red/Black Balloons",
+      "2 Heart Shape Foils"
+    ],
+    "addOns": [
+      {
+        "title": "Flower Decoration Add-on",
+        "price": 3000
+      }
+    ],
+    "pricingNote": "Base price valid within 10 km.",
+    "serviceHighlights": [
+      "At-home experience",
+      "Quick transformation",
+      "Optional flower upgrade"
+    ],
+    "availableCities": [
+      "Bangalore"
+    ]
+  },
+  {
+    "id": "svc-basic-wall",
+    "slug": "basic-wall-decoration",
+    "title": "Basic Wall Decoration",
+    "category": "Birthday",
+    "startingPrice": 2500,
+    "shortDescription": "Colorful wall decor with silver curtains, bunting, and confetti balloons.",
+    "description": "Bright, clean wall setup suitable for kids and family birthday events.",
+    "image": "/Basic-wall-decoration.png",
+    "gallery": [
+      "/Basic-wall-decoration.png"
+    ],
+    "packageInclusions": [
+      "2 Silver Fringe Curtains",
+      "Happy Birthday Bunting",
+      "Age Number",
+      "Blue/White/Dark Blue/Purple Balloons",
+      "Confetti Balloons",
+      "4 Star Foils"
+    ],
+    "addOns": [
+      {
+        "title": "Front Setup (2 paper cylinders, 2 bird cages, cake stand, name board)",
+        "price": 5000
+      }
+    ],
+    "pricingNote": "Base price valid within 10 km.",
+    "serviceHighlights": [
+      "Vibrant color style",
+      "Great for home halls",
+      "Kid-friendly visual theme"
+    ],
+    "availableCities": [
+      "Bangalore",
+      "Hyderabad"
+    ]
+  }
+]
