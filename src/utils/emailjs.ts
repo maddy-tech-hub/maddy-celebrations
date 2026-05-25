@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 
 export interface EnquiryEmailPayload {
+  [key: string]: string;
   name: string;
   mobileNumber: string;
   email: string;
@@ -27,4 +28,3 @@ export const sendEnquiryEmail = async (payload: EnquiryEmailPayload) => {
 
   return emailjs.send(serviceId, templateId, payload, { publicKey });
 };
-
