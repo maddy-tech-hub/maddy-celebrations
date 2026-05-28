@@ -1,4 +1,4 @@
-# Maddy Celebrations Email Templates
+# Seven Gala Email Templates
 
 This module contains two table-based, inline-style email templates optimized for broad client compatibility.
 
@@ -8,7 +8,7 @@ This module contains two table-based, inline-style email templates optimized for
 ## Recommended Subject Lines
 
 - Admin/Internal: `New Decoration Inquiry - {{decorationType}} | {{city}} | {{eventDate}}`
-- Customer: `We Received Your Decoration Inquiry - Maddy Celebrations`
+- Customer: `We Received Your Decoration Inquiry - Seven Gala`
 
 ## Token Contract
 
@@ -87,5 +87,5 @@ We received your inquiry for `{{decorationType}}` on `{{eventDate}}` in `{{city}
 Our team will contact you shortly on `{{mobileNumber}}`.
 
 Support:
-- Phone: +91 6362411428
-- Email: vemireddyomr@gmail.com
+- Phone: +91 8904502073, +91 7892047354
+- Email: contact.7gala@gmail.com

@@ -17,7 +17,7 @@ type CallbackFormData = z.infer<typeof callbackSchema>;
 
 export const FloatingSupportWidgets = () => {
   const [open, setOpen] = useState(false);
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_PHONE || "919000090000";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_PHONE || "918904502073";
   const whatsappHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi Seven Gala, I need decoration service details.")}`;
 
   const {

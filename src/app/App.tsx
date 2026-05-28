@@ -7,14 +7,14 @@ import { cities } from "../data/cities";
 import { useLocation } from "../hooks/useLocation";
 import type { City } from "../types";
 import { AppRoutes } from "../routes/AppRoutes";
+import headerTitle from "../assets/7Laga/7Laga_header_cropped.png";
 
 const Header = () => {
   const { city, setCity } = useLocation();
-  const appName = import.meta.env.VITE_APP_NAME || "Seven Gala";
   return (
     <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-[1320px] items-center justify-between px-4 py-3 sm:px-6">
-        <p className="text-lg font-bold text-slate-900">{appName}</p>
+      <div className="mx-auto flex max-w-[1320px] items-center justify-between px-4 py-2 sm:px-6">
+        <img src={headerTitle} alt="Seven Gala" className="h-12 w-auto shrink-0 object-contain sm:h-14 lg:h-16" />
         <div className="flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-50 p-1.5">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-brand-700 shadow-sm">
             <MapPin size={14} />

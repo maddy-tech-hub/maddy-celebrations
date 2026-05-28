@@ -1,9 +1,10 @@
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { BadgePercent, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { EnquiryForm } from "../../components/service/EnquiryForm/EnquiryForm";
 import { Card } from "../../components/ui/Card";
 import { services } from "../../data/services";
+import { formatPrice, getSpecialPrice, OFFER_DISCOUNT_PERCENTAGE } from "../../utils/pricing";
 
 export const ServiceDetailsPage = () => {
   const { slug } = useParams();
@@ -21,6 +22,7 @@ export const ServiceDetailsPage = () => {
   if (!service) return <Navigate to="/404" replace />;
 
   const activeImage = galleryImages[activeImageIndex] ?? "/ring-baloon.png";
+  const specialPrice = getSpecialPrice(service.startingPrice);
   const showPrev = () => setActiveImageIndex((current) => (current === 0 ? galleryImages.length - 1 : current - 1));
   const showNext = () => setActiveImageIndex((current) => (current + 1) % galleryImages.length);
   const handleBack = () => {
@@ -81,9 +83,29 @@ export const ServiceDetailsPage = () => {
             </div>
           ) : null}
 
-          <h1 className="text-3xl font-bold text-slate-900">{service.title}</h1>
+          <div className="flex flex-wrap items-center gap-3">
+            <h1 className="text-3xl font-bold text-slate-900">{service.title}</h1>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-600 px-3 py-1.5 text-sm font-bold text-white shadow-lg shadow-rose-600/20">
+              <BadgePercent size={16} />
+              {OFFER_DISCOUNT_PERCENTAGE}% OFF
+            </span>
+          </div>
           <p className="text-slate-600">{service.description}</p>
-          <p className="text-lg font-semibold text-slate-900">Starting at Rs. {service.startingPrice.toLocaleString()}</p>
+          <Card className="border-rose-100 bg-gradient-to-br from-rose-50 via-white to-amber-50">
+            <p className="text-sm font-bold uppercase text-rose-700">Limited celebration offer</p>
+            <div className="mt-2 flex flex-wrap items-end gap-3">
+              <span className="text-4xl font-black text-slate-950">{formatPrice(specialPrice)}</span>
+              <span className="pb-1 text-lg font-semibold text-slate-400 line-through">
+                {formatPrice(service.startingPrice)}
+              </span>
+              <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-bold text-emerald-700">
+                Save {formatPrice(service.startingPrice - specialPrice)}
+              </span>
+            </div>
+            <p className="mt-2 text-sm text-slate-600">
+              Every order gets {OFFER_DISCOUNT_PERCENTAGE}% off. Final pricing may vary based on customization and distance.
+            </p>
+          </Card>
           {service.pricingNote ? <p className="text-sm text-slate-500">{service.pricingNote}</p> : null}
           <div className="grid gap-4 md:grid-cols-2">
             <Card>
@@ -120,6 +142,12 @@ export const ServiceDetailsPage = () => {
         <aside className="lg:sticky lg:top-20 lg:h-fit">
           <Card>
             <h2 className="mb-3 text-xl font-semibold">Enquiry Form</h2>
+            <div className="mb-4 rounded-2xl border border-rose-100 bg-rose-50 px-4 py-3">
+              <p className="text-xs font-bold uppercase text-rose-700">Offer applied</p>
+              <p className="mt-1 text-sm font-semibold text-slate-900">
+                Special price starts at {formatPrice(specialPrice)}
+              </p>
+            </div>
             <EnquiryForm defaultDecorationType={service.title} />
           </Card>
         </aside>
