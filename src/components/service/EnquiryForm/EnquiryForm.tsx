@@ -63,11 +63,11 @@ export const EnquiryForm: React.FC<{ defaultDecorationType: string; onSubmitEnqu
     const payload = {
       ...data,
       additionalNotes: data.additionalNotes?.trim() || "No additional notes provided",
-      inquiryId: `SG-${Date.now()}`,
+      inquiryId: `IE-${Date.now()}`,
       submittedAt: getSubmittedAtInIst(),
       servicePageUrl: window.location.href,
       emailSubjectAdmin: `New Decoration Inquiry - ${data.decorationType}`,
-      emailSubjectCustomer: "We Received Your Inquiry - Seven Gala",
+      emailSubjectCustomer: "We Received Your Inquiry - Irasah Events",
     };
 
     console.log("Enquiry Payload:", payload);

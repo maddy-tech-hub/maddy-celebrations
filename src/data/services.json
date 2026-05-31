@@ -7,24 +7,12 @@
     "startingPrice": 3000,
     "shortDescription": "Elegant 6x6 ring setup with gold, pink, and rose gold balloons.",
     "description": "Premium ring decor package ideal for birthdays and intimate celebrations.",
-    "image": "/ring-baloon.png",
-    "gallery": [
-      "/ring-baloon.png"
-    ],
-    "packageInclusions": [
-      "6x6 Ring Frame",
-      "Balloon Colors: Gold, Pink, Rose Gold"
-    ],
+    "imageKey": "ringBalloon",
+    "galleryImageKeys": ["ringBalloon"],
+    "packageInclusions": ["6x6 Ring Frame", "Balloon Colors: Gold, Pink, Rose Gold"],
     "pricingNote": "Price valid within 10 km.",
-    "serviceHighlights": [
-      "Compact setup",
-      "Photo-friendly",
-      "Fast installation"
-    ],
-    "availableCities": [
-      "Bangalore",
-      "Hyderabad"
-    ]
+    "serviceHighlights": ["Compact setup", "Photo-friendly", "Fast installation"],
+    "availableCities": ["Bangalore", "Hyderabad"]
   },
   {
     "id": "svc-neon-birthday",
@@ -34,30 +22,13 @@
     "startingPrice": 3500,
     "shortDescription": "Ring balloon setup with happy birthday neon light.",
     "description": "Birthday setup featuring neutral balloon tones and neon highlight styling.",
-    "image": "/happy-birthday-neon.png",
-    "gallery": [
-      "/happy-birthday-neon.png"
-    ],
-    "packageInclusions": [
-      "Ring Balloon Setup",
-      "Happy Birthday Neon Light"
-    ],
-    "addOns": [
-      {
-        "title": "Neon Light Add-on",
-        "price": 500
-      }
-    ],
+    "imageKey": "happyBirthdayNeon",
+    "galleryImageKeys": ["happyBirthdayNeon"],
+    "packageInclusions": ["Ring Balloon Setup", "Happy Birthday Neon Light"],
+    "addOns": [{ "title": "Neon Light Add-on", "price": 500 }],
     "pricingNote": "Price valid within 10 km.",
-    "serviceHighlights": [
-      "Premium look",
-      "Soft color palette",
-      "Indoor-ready"
-    ],
-    "availableCities": [
-      "Bangalore",
-      "Hyderabad"
-    ]
+    "serviceHighlights": ["Premium look", "Soft color palette", "Indoor-ready"],
+    "availableCities": ["Bangalore", "Hyderabad"]
   },
   {
     "id": "svc-surprise-car-boot",
@@ -67,27 +38,12 @@
     "startingPrice": 2000,
     "shortDescription": "Car boot surprise decor with bunting, photos, and foil balloons.",
     "description": "Creative surprise plan perfect for midnight or doorstep birthday moments.",
-    "image": "/Surprise-birthday-plan.png",
-    "gallery": [
-      "/Surprise-birthday-plan.png"
-    ],
-    "packageInclusions": [
-      "Happy Birthday Bunting",
-      "10 Photo Prints",
-      "Age Number",
-      "Red/Gold Balloons",
-      "2 Heart Shape Foils"
-    ],
+    "imageKey": "surpriseBirthdayPlan",
+    "galleryImageKeys": ["surpriseBirthdayPlan"],
+    "packageInclusions": ["Happy Birthday Bunting", "10 Photo Prints", "Age Number", "Red/Gold Balloons", "2 Heart Shape Foils"],
     "pricingNote": "Price valid within 10 km.",
-    "serviceHighlights": [
-      "Quick setup",
-      "High surprise impact",
-      "Budget friendly"
-    ],
-    "availableCities": [
-      "Bangalore",
-      "Hyderabad"
-    ]
+    "serviceHighlights": ["Quick setup", "High surprise impact", "Budget friendly"],
+    "availableCities": ["Bangalore", "Hyderabad"]
   },
   {
     "id": "svc-u-shape-bride",
@@ -97,25 +53,12 @@
     "startingPrice": 4500,
     "shortDescription": "Stylish U-shape frame decor with chrome silver and neon.",
     "description": "Elegant U-frame concept suitable for bride-to-be, engagement, and special occasions.",
-    "image": "/U-shape-baloon-decoration.png",
-    "gallery": [
-      "/U-shape-baloon-decoration.png"
-    ],
-    "packageInclusions": [
-      "U Shape Frame",
-      "Pink/White/Chrome Silver Balloons",
-      "Big Macaron Balloons",
-      "Neon Light"
-    ],
+    "imageKey": "uShapeBalloon",
+    "galleryImageKeys": ["uShapeBalloon"],
+    "packageInclusions": ["U Shape Frame", "Pink/White/Chrome Silver Balloons", "Big Macaron Balloons", "Neon Light"],
     "pricingNote": "Price valid within 10 km.",
-    "serviceHighlights": [
-      "Premium finish",
-      "Event focal point",
-      "Customizable theme colors"
-    ],
-    "availableCities": [
-      "Bangalore"
-    ]
+    "serviceHighlights": ["Premium finish", "Event focal point", "Customizable theme colors"],
+    "availableCities": ["Bangalore"]
   },
   {
     "id": "svc-bedroom-surprise",
@@ -125,30 +68,13 @@
     "startingPrice": 2000,
     "shortDescription": "Room surprise setup with foil message and hanging balloons.",
     "description": "Romantic and birthday-ready bedroom styling for private celebrations.",
-    "image": "/Bed-room-surprise.png",
-    "gallery": [
-      "/Bed-room-surprise.png"
-    ],
-    "packageInclusions": [
-      "Happy Birthday Gold Foil",
-      "100 Red/Black Balloons",
-      "2 Heart Shape Foils"
-    ],
-    "addOns": [
-      {
-        "title": "Flower Decoration Add-on",
-        "price": 3000
-      }
-    ],
+    "imageKey": "bedroomSurprise",
+    "galleryImageKeys": ["bedroomSurprise"],
+    "packageInclusions": ["Happy Birthday Gold Foil", "100 Red/Black Balloons", "2 Heart Shape Foils"],
+    "addOns": [{ "title": "Flower Decoration Add-on", "price": 3000 }],
     "pricingNote": "Base price valid within 10 km.",
-    "serviceHighlights": [
-      "At-home experience",
-      "Quick transformation",
-      "Optional flower upgrade"
-    ],
-    "availableCities": [
-      "Bangalore"
-    ]
+    "serviceHighlights": ["At-home experience", "Quick transformation", "Optional flower upgrade"],
+    "availableCities": ["Bangalore"]
   },
   {
     "id": "svc-basic-wall",
@@ -158,33 +84,87 @@
     "startingPrice": 2500,
     "shortDescription": "Colorful wall decor with silver curtains, bunting, and confetti balloons.",
     "description": "Bright, clean wall setup suitable for kids and family birthday events.",
-    "image": "/Basic-wall-decoration.png",
-    "gallery": [
-      "/Basic-wall-decoration.png"
-    ],
-    "packageInclusions": [
-      "2 Silver Fringe Curtains",
-      "Happy Birthday Bunting",
-      "Age Number",
-      "Blue/White/Dark Blue/Purple Balloons",
-      "Confetti Balloons",
-      "4 Star Foils"
-    ],
-    "addOns": [
-      {
-        "title": "Front Setup (2 paper cylinders, 2 bird cages, cake stand, name board)",
-        "price": 5000
-      }
-    ],
+    "imageKey": "basicWallDecoration",
+    "galleryImageKeys": ["basicWallDecoration"],
+    "packageInclusions": ["2 Silver Fringe Curtains", "Happy Birthday Bunting", "Age Number", "Blue/White/Dark Blue/Purple Balloons", "Confetti Balloons", "4 Star Foils"],
+    "addOns": [{ "title": "Front Setup (2 paper cylinders, 2 bird cages, cake stand, name board)", "price": 5000 }],
     "pricingNote": "Base price valid within 10 km.",
-    "serviceHighlights": [
-      "Vibrant color style",
-      "Great for home halls",
-      "Kid-friendly visual theme"
-    ],
-    "availableCities": [
-      "Bangalore",
-      "Hyderabad"
-    ]
+    "serviceHighlights": ["Vibrant color style", "Great for home halls", "Kid-friendly visual theme"],
+    "availableCities": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": "svc-tattoo-artist",
+    "slug": "tattoo-artist",
+    "title": "Tattoo Artist",
+    "category": "Kids Activities",
+    "startingPrice": 2500,
+    "shortDescription": "Fun temporary tattoo artist service for parties and kids events.",
+    "description": "A party-friendly tattoo artist experience with safe temporary designs for kids, birthdays, school events, and family celebrations.",
+    "imageKey": "tattooArtist",
+    "galleryImageKeys": ["tattooArtist"],
+    "packageInclusions": ["Temporary tattoo artist", "Kid-friendly design options", "Basic setup materials"],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": ["Crowd favorite", "Safe temporary designs", "Great for birthday activities"],
+    "availableCities": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": "svc-balloon-modeling",
+    "slug": "balloon-modeling-sculptor",
+    "title": "Balloon Modeling / Sculptor",
+    "category": "Kids Activities",
+    "startingPrice": 2500,
+    "shortDescription": "Interactive balloon modeling and sculpting for joyful party moments.",
+    "description": "Balloon modeling entertainment where sculpted balloons become playful takeaways for children and guests.",
+    "imageKey": "balloonModeling",
+    "galleryImageKeys": ["balloonModeling"],
+    "packageInclusions": ["Balloon sculptor", "Assorted modeling balloons", "Interactive party activity"],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": ["Interactive entertainment", "Perfect for kids", "Colorful guest takeaways"],
+    "availableCities": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": "svc-key-chain-making",
+    "slug": "key-chain-making",
+    "title": "Key Chain Making",
+    "category": "Kids Activities",
+    "startingPrice": 5000,
+    "shortDescription": "Creative key chain making activity for birthdays and workshops.",
+    "description": "Hands-on key chain making activity where guests create personalized keepsakes during the celebration.",
+    "imageKey": "keyChainMaking",
+    "galleryImageKeys": ["keyChainMaking"],
+    "packageInclusions": ["Activity coordinator", "Key chain making materials", "Basic setup support"],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": ["Hands-on activity", "Personalized keepsakes", "Great for groups"],
+    "availableCities": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": "svc-slime-art",
+    "slug": "slime-art",
+    "title": "Slime Art",
+    "category": "Kids Activities",
+    "startingPrice": 6500,
+    "shortDescription": "A colorful slime art activity station for playful celebrations.",
+    "description": "A guided slime art experience with colorful textures and creative play, ideal for kids parties and activity-based events.",
+    "imageKey": "slimeArt",
+    "galleryImageKeys": ["slimeArt"],
+    "packageInclusions": ["Activity coordinator", "Slime art materials", "Guided creative session"],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": ["Creative sensory play", "High engagement", "Fun activity station"],
+    "availableCities": ["Bangalore", "Hyderabad"]
+  },
+  {
+    "id": "svc-face-painting",
+    "slug": "face-painting",
+    "title": "Face Painting",
+    "category": "Kids Activities",
+    "startingPrice": 3500,
+    "shortDescription": "Colorful face painting for kids birthdays and event activities.",
+    "description": "Face painting service with fun designs that add color, photos, and excitement to kids celebrations.",
+    "imageKey": "facePainting",
+    "galleryImageKeys": ["facePainting"],
+    "packageInclusions": ["Face painting artist", "Kid-friendly paint colors", "Basic design options"],
+    "pricingNote": "Price valid within 10 km.",
+    "serviceHighlights": ["Photo-friendly", "Kid-loved activity", "Adds color to events"],
+    "availableCities": ["Bangalore", "Hyderabad"]
   }
 ]

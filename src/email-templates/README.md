@@ -1,4 +1,4 @@
-# Seven Gala Email Templates
+# Irasah Events Email Templates
 
 This module contains two table-based, inline-style email templates optimized for broad client compatibility.
 
@@ -8,7 +8,7 @@ This module contains two table-based, inline-style email templates optimized for
 ## Recommended Subject Lines
 
 - Admin/Internal: `New Decoration Inquiry - {{decorationType}} | {{city}} | {{eventDate}}`
-- Customer: `We Received Your Decoration Inquiry - Seven Gala`
+- Customer: `We Received Your Decoration Inquiry - Irasah Events`
 
 ## Token Contract
 
@@ -88,4 +88,4 @@ Our team will contact you shortly on `{{mobileNumber}}`.
 
 Support:
 - Phone: +91 8904502073, +91 7892047354
-- Email: contact.7gala@gmail.com
+- Email: irasah.events@gmail.com

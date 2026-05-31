@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import type { Service } from "../../../types";
+import { fallbackServiceImage } from "../../../data/images";
 import { formatPrice, getSpecialPrice, OFFER_DISCOUNT_PERCENTAGE } from "../../../utils/pricing";
 import { Card } from "../../ui/Card";
 import { Button } from "../../ui/Button";
@@ -17,7 +18,7 @@ export const ServiceCard: React.FC<{ service: Service }> = ({ service }) => {
             alt={service.title}
             className="h-48 w-full object-cover"
             onError={(event) => {
-              event.currentTarget.src = "/ring-baloon.png";
+              event.currentTarget.src = fallbackServiceImage;
             }}
           />
           <span className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-900 shadow">

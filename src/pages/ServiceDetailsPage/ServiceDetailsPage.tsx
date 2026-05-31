@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { EnquiryForm } from "../../components/service/EnquiryForm/EnquiryForm";
 import { Card } from "../../components/ui/Card";
+import { fallbackServiceImage } from "../../data/images";
 import { services } from "../../data/services";
 import { formatPrice, getSpecialPrice, OFFER_DISCOUNT_PERCENTAGE } from "../../utils/pricing";
 
@@ -21,7 +22,7 @@ export const ServiceDetailsPage = () => {
 
   if (!service) return <Navigate to="/404" replace />;
 
-  const activeImage = galleryImages[activeImageIndex] ?? "/ring-baloon.png";
+  const activeImage = galleryImages[activeImageIndex] ?? fallbackServiceImage;
   const specialPrice = getSpecialPrice(service.startingPrice);
   const showPrev = () => setActiveImageIndex((current) => (current === 0 ? galleryImages.length - 1 : current - 1));
   const showNext = () => setActiveImageIndex((current) => (current + 1) % galleryImages.length);
@@ -56,7 +57,7 @@ export const ServiceDetailsPage = () => {
               alt={service.title}
               className="h-[58vh] w-full object-contain"
               onError={(event) => {
-                event.currentTarget.src = "/ring-baloon.png";
+                event.currentTarget.src = fallbackServiceImage;
               }}
             />
           </button>
@@ -75,7 +76,7 @@ export const ServiceDetailsPage = () => {
                     alt={`${service.title} ${index + 1}`}
                     className="h-20 w-24 object-cover sm:h-24 sm:w-32"
                     onError={(event) => {
-                      event.currentTarget.src = "/ring-baloon.png";
+                      event.currentTarget.src = fallbackServiceImage;
                     }}
                   />
                 </button>
@@ -191,7 +192,7 @@ export const ServiceDetailsPage = () => {
               alt={service.title}
               className="max-h-full max-w-full object-contain"
               onError={(event) => {
-                event.currentTarget.src = "/ring-baloon.png";
+                event.currentTarget.src = fallbackServiceImage;
               }}
             />
           </div>

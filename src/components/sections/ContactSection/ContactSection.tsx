@@ -9,7 +9,7 @@ export const ContactSection = () => (
         <Phone size={16} /> +91 8904502073, +91 7892047354
       </p>
       <p className="inline-flex items-center gap-2 text-sm text-slate-700">
-        <Mail size={16} /> contact.7gala@gmail.com
+        <Mail size={16} /> irasah.events@gmail.com
       </p>
     </Card>
   </section>

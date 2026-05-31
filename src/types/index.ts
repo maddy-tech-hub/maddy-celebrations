@@ -8,6 +8,7 @@ export type ServiceCategory =
   | "Engagement"
   | "House Warming"
   | "Romantic Setup"
+  | "Kids Activities"
   | "Corporate Events";
 
 export interface Service {

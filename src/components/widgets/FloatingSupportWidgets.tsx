@@ -18,7 +18,7 @@ type CallbackFormData = z.infer<typeof callbackSchema>;
 export const FloatingSupportWidgets = () => {
   const [open, setOpen] = useState(false);
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_PHONE || "918904502073";
-  const whatsappHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi Seven Gala, I need decoration service details.")}`;
+  const whatsappHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi Irasah Events, I need decoration service details.")}`;
 
   const {
     register,
@@ -47,14 +47,14 @@ export const FloatingSupportWidgets = () => {
           <MessageCircle size={18} />
           WhatsApp
         </a>
-        <button
+        {/* <button
           type="button"
           onClick={() => setOpen(true)}
           className="inline-flex items-center gap-2 rounded-xl bg-rose-600 px-3 py-2 text-sm font-semibold text-white shadow-lg shadow-rose-600/35 transition hover:bg-rose-700 sm:px-4"
         >
           <PhoneCall size={18} />
           Request Callback
-        </button>
+        </button> */}
       </div>
 
       <Modal open={open} onClose={() => setOpen(false)}>
