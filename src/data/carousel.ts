@@ -14,12 +14,6 @@ export const carouselSlides = [
     subtitle: "Quick celebration styling planned with care",
   },
   {
-    id: "slide-3",
-    image: appImages.carousel.anniversary,
-    title: "Anniversary Decoration",
-    subtitle: "Elegant decor for milestones and romantic celebrations",
-  },
-  {
     id: "slide-4",
     image: appImages.carousel.welcomeBaby,
     title: "Welcome Baby Decor",

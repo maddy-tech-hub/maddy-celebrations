@@ -46,7 +46,7 @@ export const HeroSection = () => {
   }, [totalSlides]);
 
   return (
-    <section className="mx-auto max-w-[1320px] px-4 sm:px-6">
+    <section className="mx-auto max-w-[1320px] px-4 pt-5 sm:px-6 sm:pt-6">
       <div className="relative aspect-[18/5] w-full overflow-hidden rounded-3xl bg-slate-900">
         <AnimatePresence initial={false} custom={direction} mode="sync">
           <motion.img

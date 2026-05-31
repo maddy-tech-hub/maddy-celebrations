@@ -1,6 +1,5 @@
 import headerLogo from "../assets/Irasah Logo/header-logo.png";
 import tabLogo from "../assets/Irasah Logo/tab-logo.png";
-import anniversary from "../assets/Latest Carousel/ANniversary.png";
 import candleLightDinner from "../assets/Latest Carousel/CandleLightDInner.png";
 import candleLightDinnerAlt from "../assets/Latest Carousel/candle_light_dinner2A.png";
 import candleLightDinnerDetail from "../assets/Latest Carousel/candle_light_dinner2AA.png";
@@ -19,7 +18,6 @@ export const appImages = {
   carousel: {
     roomDecoration,
     sameDay,
-    anniversary,
     welcomeBaby,
     kidsArt,
     houseWarming,

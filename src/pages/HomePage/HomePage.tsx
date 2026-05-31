@@ -8,7 +8,7 @@ import { Button } from "../../components/ui/Button";
 import { Card } from "../../components/ui/Card";
 import { services } from "../../data/services";
 
-const topCategories = [...new Set(services.map((service) => service.category))];
+const topCategories = [...new Set(services.filter((service) => service.category !== "Special Services").map((service) => service.category))];
 
 export const HomePage = () => (
   <main className="space-y-10 pb-8">
@@ -22,6 +22,9 @@ export const HomePage = () => (
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <a href="#services">
             <Button>Explore Services</Button>
+          </a>
+          <a href="#special-services">
+            <Button variant="secondary">Special Services</Button>
           </a>
           <p className="text-sm font-medium text-slate-500">Trusted decoration partner for home and event venues.</p>
         </div>

@@ -1,4 +1,4 @@
-export type City = "Bangalore" | "Chennai" | "Hyderabad" | "Mumbai" | "Pune";
+export type City = "Bangalore" | "Chennai" | "Hyderabad" | "Mumbai";
 
 export type ServiceCategory =
   | "Birthday"
@@ -8,7 +8,7 @@ export type ServiceCategory =
   | "Engagement"
   | "House Warming"
   | "Romantic Setup"
-  | "Kids Activities"
+  | "Special Services"
   | "Corporate Events";
 
 export interface Service {
